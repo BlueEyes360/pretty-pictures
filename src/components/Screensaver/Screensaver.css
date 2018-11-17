@@ -1,0 +1,14 @@
+.Screensaver {
+    height: 100%;
+    /* width: 100%; */
+    margin: 0px;
+    background-color: red;
+}
+
+.Art_Image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
