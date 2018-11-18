@@ -18,20 +18,15 @@ class App extends Component {
   render() {
 
     const style = {
-      opacity: "10%",
-      backgroundColor: 'blue',
-      color: "white",
+      backgroundColor: 'white',
+      color: "blue",
       font: 'inherit',
-      padding: "100 px",
-      border: '1 px solid blue',
-      ':hover': {
-        backgroundColor: 'lightblue',
-        color: 'black'
-      },
+      margin: "10 px",
       position: "absolute",
-      top: '20%',
-      right: '46%'
-      // boxShadow: "0 2 px 3 px #ccc",
+      bottom: '7.5vh',
+      right: '12.5vw',
+      height: '4vh',
+      width: '10vw'
     };
 
     return (
