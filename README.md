@@ -1,3 +1,9 @@
+Quick Info on this Project (to be extended later): The idea is to have a web app that will display full screen images.
+
+Current Status: There are 5 pictures that change when you click the button. Woo!
+
+___________
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
