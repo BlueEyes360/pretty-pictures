@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Screensaver from './components/Screensaver/Screensaver';
 
@@ -13,6 +12,10 @@ class App extends Component {
   changePictureHandler = (props) => {
     let i = this.state.index;
     this.setState({index: (++i%5)});
+  }
+
+  componentDidMount() {
+  setInterval(this.changePictureHandler(this.index), 2000);
   }
 
   render() {
@@ -31,11 +34,12 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Screensaver 
+        <Screensaver
           index={this.state.index}
           changed={this.props.changed} />
         <button
-          onClick={() => this.changePictureHandler(this.index)}
+
+  onClick={() => this.changePictureHandler(this.index)}
           style={style}
         >Change Picture</button>
       </div>
