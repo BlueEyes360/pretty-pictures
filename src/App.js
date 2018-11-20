@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Screensaver from './components/Screensaver/Screensaver';
-import nextarrow from './assets/nextarrowbig.png';
+import nextarrow from './assets/nextarrowbigwhite.png';
+import prevarrow from './assets/prevarrowbigwhite.png';
 
 
 class App extends Component {
@@ -10,9 +11,22 @@ class App extends Component {
     maxIndex: 5,
   }
 
-  changePictureHandler = (props) => {
+  nextPictureHandler = (props) => {
     let i = this.state.index;
     this.setState({index: (++i%5)});
+  }
+
+  prevPictureHandler = (props) => {
+    let i = this.state.index;
+    if(i === 0)
+    {
+      i = 4;
+    }
+    else
+    {
+      i = --i % 5;
+    }
+    this.setState({index: i});
   }
 
   // componentDidMount() {
@@ -20,17 +34,6 @@ class App extends Component {
   // }
 
   render() {
-
-    const style = {
-      backgroundColor: 'white',
-      color: "blue",
-      margin: "10 px",
-      position: "absolute",
-      bottom: '7.5vh',
-      right: '12.5vw',
-      height: '4vh',
-      width: '10vw'
-    };
 
     return (
       <div className="App">
@@ -43,7 +46,10 @@ class App extends Component {
         >Change Picture</button> */}
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow'
-          onClick={() => this.changePictureHandler(this.index)} />
+          onClick={() => this.nextPictureHandler(this.index)} />
+        <img
+          src={prevarrow} alt="Previous Arrow" className='PrevArrow'
+          onClick={() => this.prevPictureHandler(this.index)} />
       </div>
     );
   }

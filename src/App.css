@@ -48,4 +48,13 @@
   position: absolute;
   bottom: 50vh;
   right: 3vw;
+  opacity: .4;
+}
+
+.PrevArrow {
+  height: 8vh;
+  position: absolute;
+  bottom: 50vh;
+  left: 3vw;
+  opacity: .4;
 }

@@ -10,7 +10,7 @@ const choosepic = index => {
     console.log("Here goes index: " + index)
 
 
-    switch (index) {
+    switch (Math.abs(index%5)) {
         case 0:
             art = art0;
             break;
