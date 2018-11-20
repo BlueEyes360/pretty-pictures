@@ -29,8 +29,11 @@ class App extends Component {
     this.setState({index: i});
   }
 
+  myVar = setInterval(this.nextPictureHandler, 6000);
+
   // componentDidMount() {
   // setInterval(this.changePictureHandler(this.index), 2000);
+  // setInterval(this.nextPictureHandler(this.index), 2000);
   // }
 
   render() {
@@ -40,10 +43,6 @@ class App extends Component {
         <Screensaver
           index={this.state.index}
           changed={this.props.changed} />
-        {/* <button
-          onClick={() => this.changePictureHandler(this.index)}
-          className="Button"
-        >Change Picture</button> */}
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow'
           onClick={() => this.nextPictureHandler(this.index)} />
