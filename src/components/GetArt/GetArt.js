@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 // import './GetArt.css';
 
 const getart = (props) => {
@@ -42,11 +42,7 @@ const getart = (props) => {
 
 
 
-    return (
-        <div>
-
-        </div>
-    )
+    return this.data.Items[0].PrimaryImage.Raw;
 }
 
 export default getart;

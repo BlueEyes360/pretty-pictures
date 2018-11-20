@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import Screensaver from './components/Screensaver/Screensaver';
+import nextarrow from './assets/nextarrowbig.png';
 
 
 class App extends Component {
   state = {
-    index: 1,
+    index: 0,
     maxIndex: 5,
   }
 
@@ -14,16 +15,15 @@ class App extends Component {
     this.setState({index: (++i%5)});
   }
 
-  componentDidMount() {
-  setInterval(this.changePictureHandler(this.index), 2000);
-  }
+  // componentDidMount() {
+  // setInterval(this.changePictureHandler(this.index), 2000);
+  // }
 
   render() {
 
     const style = {
       backgroundColor: 'white',
       color: "blue",
-      font: 'inherit',
       margin: "10 px",
       position: "absolute",
       bottom: '7.5vh',
@@ -37,11 +37,13 @@ class App extends Component {
         <Screensaver
           index={this.state.index}
           changed={this.props.changed} />
-        <button
-
-  onClick={() => this.changePictureHandler(this.index)}
-          style={style}
-        >Change Picture</button>
+        {/* <button
+          onClick={() => this.changePictureHandler(this.index)}
+          className="Button"
+        >Change Picture</button> */}
+        <img
+          src={nextarrow} alt="Next Arrow" className='NextArrow'
+          onClick={() => this.changePictureHandler(this.index)} />
       </div>
     );
   }

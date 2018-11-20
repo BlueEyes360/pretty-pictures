@@ -15,9 +15,8 @@ const screensaver = (props) => {
     return (
         < div className="Screensaver"
             onChange={props.changed} value={props.index}>
-            {console.log(props.index)}
             <img src={choosepic(props.index)} alt="Art" className="Art_Image" />
-            {/* {getart}; */}
+            {/* {getart} */}
         </div>
     )
 }

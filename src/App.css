@@ -30,3 +30,22 @@
     transform: rotate(360deg);
   }
 }
+
+.Button {
+  font-size: 1.5vh;
+  height: 3vh;
+  background-color: white;
+  color: blue;
+  margin: 10px;
+  position: absolute;
+  bottom: 7.5vh;
+  right: 12.5vw;
+  width: 10vw;
+}
+
+.NextArrow {
+  height: 8vh;
+  position: absolute;
+  bottom: 50vh;
+  right: 3vw;
+}
