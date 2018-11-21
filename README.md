@@ -1,6 +1,6 @@
 Quick Info on this Project (to be extended later): The idea is to have a web app that will display full screen images.
 
-Current Status: There are 5 pictures that change when you click the button. Woo!
+Current Status: There are 5 pictures that change when either when you click the buttons or on a timer (currently set at 60 seconds, I think).
 
 ___________
 
