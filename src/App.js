@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Screensaver from './components/Screensaver/Screensaver';
+import InfoCard from './components/InfoCard/InfoCard';
 import nextarrow from './assets/nextarrowbigwhite.png';
 import prevarrow from './assets/prevarrowbigwhite.png';
 
@@ -29,12 +30,7 @@ class App extends Component {
     this.setState({index: i});
   }
 
-  myVar = setInterval(this.nextPictureHandler, 6000);
-
-  // componentDidMount() {
-  // setInterval(this.changePictureHandler(this.index), 2000);
-  // setInterval(this.nextPictureHandler(this.index), 2000);
-  // }
+  timingLoop = setInterval(this.nextPictureHandler, 60000);
 
   render() {
 
@@ -49,6 +45,7 @@ class App extends Component {
         <img
           src={prevarrow} alt="Previous Arrow" className='PrevArrow'
           onClick={() => this.prevPictureHandler(this.index)} />
+        <InfoCard />
       </div>
     );
   }

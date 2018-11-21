@@ -44,17 +44,17 @@
 }
 
 .NextArrow {
-  height: 8vh;
+  height: 7vmin;
   position: absolute;
   bottom: 50vh;
-  right: 3vw;
+  right: 3vmin;
   opacity: .4;
 }
 
 .PrevArrow {
-  height: 8vh;
+  height: 7vmin;
   position: absolute;
   bottom: 50vh;
-  left: 3vw;
+  left: 3vmin;
   opacity: .4;
 }

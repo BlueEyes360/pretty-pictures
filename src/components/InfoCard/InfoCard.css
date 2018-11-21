@@ -1,0 +1,23 @@
+.InfoCard {
+    height: 12vh;
+    width: 30vw;
+    margin: .5vmin auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: .5vmin;
+    text-align: center;
+    position: absolute;
+    bottom: 1vmin;
+    right: 1vmin;
+    background-color: whitesmoke;
+    opacity: .4;
+}
+
+.InfoCardText {
+    font-size: 1.5vh;
+    padding: .25vmin;
+    margin: .25vmin;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
