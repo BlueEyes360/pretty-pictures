@@ -7,9 +7,6 @@ import art4 from '../../assets/art4.jpg'
 const choosepic = index => {
     let art = art0;
 
-    console.log("Here goes index: " + index)
-
-
     switch (Math.abs(index%5)) {
         case 0:
             art = art0;
@@ -29,7 +26,6 @@ const choosepic = index => {
         default:
             break;
     }
-
 
     return (
         art

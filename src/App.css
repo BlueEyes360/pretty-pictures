@@ -31,6 +31,16 @@
   }
 }
 
+@keyframes Fade-in {
+  from {
+    opacity: .3;
+  }
+  to {
+    opacity: .9;
+  }
+}
+
+
 .Button {
   font-size: 1.5vh;
   height: 3vh;
@@ -44,17 +54,41 @@
 }
 
 .NextArrow {
-  height: 7vmin;
+  height: 6vmin;
   position: absolute;
   bottom: 50vh;
-  right: 3vmin;
-  opacity: .4;
+  right: 2vmin;
+  opacity: .3;
+  /* animation: Fade-in infinite 5s linear; */
+  /* animation: App-logo-spin infinite 20s linear; */
+
 }
 
 .PrevArrow {
-  height: 7vmin;
+  height: 6vmin;
   position: absolute;
   bottom: 50vh;
+  left: 2vmin;
+  opacity: .3;
+  /* animation: Fade-in infinite 3s linear; */
+  /* animation: App-logo-spin infinite 6s linear; */
+
+}
+
+.Arrow:hover {
+  background-color: gold;
+  border-radius: 50%;
+  opacity: .7;
+}
+
+.Menu {
+  height: 4vmin;
+  position: absolute;
+  top: 3vmin;
   left: 3vmin;
-  opacity: .4;
+  opacity: .3;
+}
+
+.Menu:hover {
+  opacity: .7;
 }
