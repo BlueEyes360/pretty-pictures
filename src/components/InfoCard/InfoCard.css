@@ -1,6 +1,7 @@
-.InfoCard {
+#InfoCard {
     height: 12vh;
     width: 30vw;
+    display: none;
     margin: .5vmin auto;
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
@@ -10,8 +11,9 @@
     bottom: 1vmin;
     right: 1vmin;
     background-color: whitesmoke;
-    opacity: 0;
+    opacity: 0.7;
     border-radius: 1vmin;
+    z-index: 0;
 }
 
 @keyframes Fade-in {
@@ -23,10 +25,9 @@
     }
 }
 
-.InfoCard:hover {
+/* .InfoCard:hover {
     opacity: 0.9;
-    /* animation: Fade-in infinite 2s linear; */
-}
+} */
 
 
 .InfoCardText {
@@ -36,4 +37,12 @@
     position: relative;
     width: 100%;
     text-align: left;
+}
+
+#CloseInfoCard {
+    position: relative;
+    height: 3vmin;
+    float: right;
+    opacity: 1.0;
+    z-index: inherit;
 }

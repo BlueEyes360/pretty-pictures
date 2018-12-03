@@ -6,6 +6,7 @@ import Loading from './components/Loading/Loading';
 
 import getart from './components/GetArt/GetArt';
 
+import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
 import prevarrow from './assets/prevarrowbigwhite.png';
 import menu from './assets/menu.png';
@@ -15,6 +16,7 @@ class App extends Component {
     index: 0,
     maxIndex: 5,
     data: 0,
+    showInfoCard: false
   }
 
   dataHandler = (props) => {
@@ -39,6 +41,24 @@ class App extends Component {
       i = --i % 5;
     }
     this.setState({index: i});
+  }
+
+  showInfoCardHandler = () => {
+    let truth = this.state.showInfoCard;
+    if(truth === false)
+    {
+      document.getElementById("InfoCard").style.display = "block";
+      document.getElementById("InfoCard").style.zIndex = "3";
+      document.getElementById("InfoCardDisplay").style.display = "none";
+      this.setState({showInfoCard: true});
+    }
+    else if (truth === true)
+    {
+      document.getElementById("InfoCard").style.display = "none";
+      document.getElementById("InfoCard").style.zIndex = "0";
+      document.getElementById("InfoCardDisplay").style.display = "block";
+      this.setState({showInfoCard: false});
+    }
   }
 
   timingLoop = setInterval(this.nextPictureHandler, 60000);
@@ -69,7 +89,11 @@ class App extends Component {
         <img
           src={menu} alt="Menu" className='Menu' />
         <Loading />
-        <InfoCard data={this.state.data} />
+        <img src={questionMark} alt='Info Card Display Button'
+          className='Arrow InfoCardDisplayButton'
+          onClick={this.showInfoCardHandler}
+          id='InfoCardDisplay' />
+        <InfoCard data={this.state.data} clickHandler={() => this.showInfoCardHandler()} />
       </div>
     );
   }

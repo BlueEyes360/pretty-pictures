@@ -3,14 +3,44 @@
     height: 10vh;
     bottom: 45vh;
     left: 45vw;
+    padding: 1vmin;
+    float: center;
+    
+}
+
+#LoadingCard {
+    position: fixed;
+    height: 15vmin;
+    width: 15vmin;
+    bottom: 44vh;
+    left: 44vw;
+    background-color: whitesmoke;
+    border-radius: 2vmin;
+    opacity: .8;
+
+    display: flex;
+}
+
+#LoadingCard p {
+    justify-content: center;
+    margin: 40% 30%;
 }
 
 #FastSpinning {
     animation: App-logo-spin infinite 1s linear;
     opacity: .7;
+    z-index: 2;
 }
 
-#SlowSpinning {
+.SlowSpinning {
     animation: App-logo-spin infinite 2s linear reverse;
     opacity: .9;
+}
+
+#TopLoading {
+    z-index: 3;
+}
+
+#BottomLoading {
+    z-index: 1;
 }
