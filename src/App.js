@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Screensaver from './components/Screensaver/Screensaver';
 import InfoCard from './components/InfoCard/InfoCard';
+import Loading from './components/Loading/Loading';
 
 import getart from './components/GetArt/GetArt';
 
@@ -67,6 +68,7 @@ class App extends Component {
           onClick={() => this.prevPictureHandler(this.index)} />
         <img
           src={menu} alt="Menu" className='Menu' />
+        <Loading />
         <InfoCard data={this.state.data} />
       </div>
     );

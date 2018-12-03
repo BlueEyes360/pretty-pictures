@@ -16,16 +16,16 @@
 
 @keyframes Fade-in {
     from {
-      opacity: .3;
+        opacity: .3;
     }
     to {
-      opacity: .9;
+        opacity: .9;
     }
 }
 
 .InfoCard:hover {
-  /* animation: Fade-in infinite 2s linear; */
-  opacity: 0.9;
+    opacity: 0.9;
+    /* animation: Fade-in infinite 2s linear; */
 }
 
 

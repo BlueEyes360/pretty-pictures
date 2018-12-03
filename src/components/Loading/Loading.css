@@ -1,0 +1,16 @@
+.Loading {
+    position: fixed;
+    height: 10vh;
+    bottom: 45vh;
+    left: 45vw;
+}
+
+.FastSpinning {
+    animation: App-logo-spin infinite 1s linear;
+    opacity: .7;
+}
+
+.SlowSpinning {
+    animation: App-logo-spin infinite 2s linear reverse;
+    opacity: .9;
+}
