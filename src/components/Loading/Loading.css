@@ -5,12 +5,12 @@
     left: 45vw;
 }
 
-.FastSpinning {
+#FastSpinning {
     animation: App-logo-spin infinite 1s linear;
     opacity: .7;
 }
 
-.SlowSpinning {
+#SlowSpinning {
     animation: App-logo-spin infinite 2s linear reverse;
     opacity: .9;
 }
