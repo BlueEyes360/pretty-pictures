@@ -40,9 +40,5 @@
 }
 
 #CloseInfoCard {
-    position: relative;
-    height: 3vmin;
-    float: right;
-    opacity: 1.0;
     z-index: inherit;
 }

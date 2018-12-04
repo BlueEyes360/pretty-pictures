@@ -3,13 +3,13 @@ import './App.css';
 import Screensaver from './components/Screensaver/Screensaver';
 import InfoCard from './components/InfoCard/InfoCard';
 import Loading from './components/Loading/Loading';
-
+import Menu from './components/Menu/Menu';
 import getart from './components/GetArt/GetArt';
 
 import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
 import prevarrow from './assets/prevarrowbigwhite.png';
-import menu from './assets/menu.png';
+import menubutton from './assets/menu.png';
 
 class App extends Component {
 
@@ -18,6 +18,7 @@ class App extends Component {
     maxIndex: 5,
     data: 0,
     showInfoCard: false,
+    showMenuCard: false,
     transitionTime: 60000,
   }
 
@@ -54,6 +55,14 @@ class App extends Component {
     this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
   }
 
+  timerSliderValueChanged = () => {
+    let newValue = document.getElementById("TimerSlider").value;
+    newValue *= 1000;
+    console.log("newValue = " + newValue);
+    this.setState({transitionTime: newValue});
+    this.timingLoop = clearInterval(this.timingLoop);
+    this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
+  }
 
   showInfoCardHandler = () => {
     let truth = this.state.showInfoCard;
@@ -70,6 +79,24 @@ class App extends Component {
       document.getElementById("InfoCard").style.zIndex = "0";
       document.getElementById("InfoCardDisplay").style.display = "block";
       this.setState({showInfoCard: false});
+    }
+  }
+
+  showMenuCardHandler = () => {
+    let truth = this.state.showMenuCard;
+    if(truth === false)
+    {
+      document.getElementById("MenuContainer").style.display = "block";
+      document.getElementById("MenuContainer").style.zIndex = "4";
+      document.getElementById("MenuButton").style.display = "none";
+      this.setState({showMenuCard: true});
+    }
+    else if (truth === true)
+    {
+      document.getElementById("MenuContainer").style.display = "none";
+      document.getElementById("MenuContainer").style.zIndex = "0";
+      document.getElementById("MenuButton").style.display = "block";
+      this.setState({showMenuCard: false});
     }
   }
 
@@ -99,13 +126,21 @@ class App extends Component {
           src={prevarrow} alt="Previous Arrow" className='PrevArrow Arrow'
           onClick={() => this.prevPictureHandlerClicked(this.index)} />
         <img
-          src={menu} alt="Menu" className='Menu' />
+          src={menubutton} alt="Menu Button" className='Menu'
+          onClick={() => this.showMenuCardHandler()}
+          id="MenuButton" />
         <Loading />
-        <img src={questionMark} alt='Info Card Display Button'
+        <img
+          src={questionMark} alt='Info Card Display Button'
           className='Arrow InfoCardDisplayButton'
           onClick={this.showInfoCardHandler}
           id='InfoCardDisplay' />
-        <InfoCard data={this.state.data} clickHandler={() => this.showInfoCardHandler()} />
+        <InfoCard
+          data={this.state.data}
+          clickHandler={() => this.showInfoCardHandler()} />
+        <Menu
+          clickHandler={() => this.showMenuCardHandler()}
+          changed={() => this.timerSliderValueChanged()} />
       </div>
     );
   }

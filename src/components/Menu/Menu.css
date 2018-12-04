@@ -1,0 +1,18 @@
+#MenuContainer {
+    position: absolute;
+    height: 30vh;
+    width: 20vw;
+    left: 1vmin;
+    top: 1vmin;
+    background-color: lightgray;
+    border-radius: 1vmin;
+    opacity: .9;
+    z-index: 0;
+    text-align: left;
+    padding: 1vmin;
+}
+
+#TimerSlider {
+    width: 19vw;
+    padding: .5vmin;
+}
