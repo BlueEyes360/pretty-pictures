@@ -5,7 +5,6 @@
     left: 45vw;
     padding: 1vmin;
     float: center;
-    
 }
 
 #LoadingCard {
@@ -17,6 +16,7 @@
     background-color: whitesmoke;
     border-radius: 2vmin;
     opacity: .8;
+    z-index: 4;
 
     display: flex;
 }

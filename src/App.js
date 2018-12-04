@@ -16,7 +16,8 @@ class App extends Component {
     index: 0,
     maxIndex: 5,
     data: 0,
-    showInfoCard: false
+    showInfoCard: false,
+    transitionTime: 60000,
   }
 
   dataHandler = (props) => {
@@ -30,7 +31,14 @@ class App extends Component {
     this.setState({index: (++i%5)});
   }
 
-  prevPictureHandler = (props) => {
+  nextPictureHandlerClicked = (props) => {
+    let i = this.state.index;
+    this.setState({index: (++i%5)});
+    this.timingLoop = clearInterval(this.timingLoop);
+    this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
+  }
+
+  prevPictureHandlerClicked = (props) => {
     let i = this.state.index;
     if(i === 0)
     {
@@ -41,7 +49,10 @@ class App extends Component {
       i = --i % 5;
     }
     this.setState({index: i});
+    this.timingLoop = clearInterval(this.timingLoop);
+    this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
   }
+
 
   showInfoCardHandler = () => {
     let truth = this.state.showInfoCard;
@@ -61,7 +72,7 @@ class App extends Component {
     }
   }
 
-  timingLoop = setInterval(this.nextPictureHandler, 60000);
+  timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
 
   componentWillMount() {
 
@@ -82,10 +93,10 @@ class App extends Component {
           changed={this.props.changed} />
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow Arrow'
-          onClick={() => this.nextPictureHandler(this.index)} />
+          onClick={() => this.nextPictureHandlerClicked(this.index)} />
         <img
           src={prevarrow} alt="Previous Arrow" className='PrevArrow Arrow'
-          onClick={() => this.prevPictureHandler(this.index)} />
+          onClick={() => this.prevPictureHandlerClicked(this.index)} />
         <img
           src={menu} alt="Menu" className='Menu' />
         <Loading />
