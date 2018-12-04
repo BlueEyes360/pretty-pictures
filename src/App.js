@@ -58,7 +58,6 @@ class App extends Component {
   timerSliderValueChanged = () => {
     let newValue = document.getElementById("TimerSlider").value;
     newValue *= 1000;
-    console.log("newValue = " + newValue);
     this.setState({transitionTime: newValue});
     this.timingLoop = clearInterval(this.timingLoop);
     this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
@@ -104,11 +103,11 @@ class App extends Component {
 
   componentWillMount() {
 
-    if(this.state.data === 0)
-    {
-      this.dataHandler();
-      console.log("Inside CmpWillMnt:dataHandler fired");
-    }
+    // if(this.state.data === 0)
+    // {
+    //   this.dataHandler();
+    //   console.log("Inside CmpWillMnt:dataHandler fired");
+    // }
 
   }
 

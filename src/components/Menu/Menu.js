@@ -13,7 +13,7 @@ const menu = (props) => {
                 onClick={props.clickHandler}
                 className='Button' />
             <p>Timer Setting:</p>
-            <input type="range" min="1" max="100" defaultValue="50"
+            <input type="range" min="1" max="120" defaultValue="60"
                 className="slider"
                 id="TimerSlider"
                 onChange={props.changed}>

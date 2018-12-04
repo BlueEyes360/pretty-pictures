@@ -13,6 +13,36 @@
 }
 
 #TimerSlider {
+    -webkit-appearance: none;
+    height: .5vmin;
+    border-radius: .5vmin;
+    background: white;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
     width: 19vw;
     padding: .5vmin;
+}
+
+#TimerSlider:hover {
+    opacity: 1;
+}
+
+#TimerSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.5vmin;
+    height: 2.5vmin;
+    border-radius: 50%;
+    background: gold;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 2.5vmin;
+    height: 2.5vmin;
+    border-radius: 50%;
+    background: gold;
+    cursor: pointer;
 }
