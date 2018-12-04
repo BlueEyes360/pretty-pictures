@@ -53,6 +53,7 @@
   top: 3vmin;
   left: 3vmin;
   opacity: .3;
+  z-index: 4;
 }
 
 .Menu:hover {
