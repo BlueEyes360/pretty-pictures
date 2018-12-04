@@ -1,6 +1,11 @@
 Quick Info on this Project (to be extended later): The idea is to have a web app that will display full screen images.
 
-Current Status: There are 5 pictures that change when either when you click the buttons or on a timer (currently set at 60 seconds, I think). The timer now works correctly, resetting on manual image change to the transition length stored in state.
+Current Status: 
+
+There are 5 pictures that change either when you click the buttons or on a timer.
+The timer now works correctly, resetting on manual image change to the transition length stored in state.
+Menus are interactive, the slider allows you to choose a value between 1 and 120 seconds for the transition.
+Pulling information from the HAM API has been commented out currently while I consider how best to implement functionality.
 
 ___________
 
