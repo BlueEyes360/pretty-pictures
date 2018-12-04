@@ -12,6 +12,7 @@ import prevarrow from './assets/prevarrowbigwhite.png';
 import menu from './assets/menu.png';
 
 class App extends Component {
+
   state = {
     index: 0,
     maxIndex: 5,
@@ -20,25 +21,25 @@ class App extends Component {
     transitionTime: 60000,
   }
 
-  dataHandler = (props) => {
+  dataHandler = () => {
     let newData = getart();
     this.setState({data: newData});
     console.log("Inside dataHandler: newData = " + {newData});
   }
 
-  nextPictureHandler = (props) => {
+  nextPictureHandler = () => {
     let i = this.state.index;
     this.setState({index: (++i%5)});
   }
 
-  nextPictureHandlerClicked = (props) => {
+  nextPictureHandlerClicked = () => {
     let i = this.state.index;
     this.setState({index: (++i%5)});
     this.timingLoop = clearInterval(this.timingLoop);
     this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
   }
 
-  prevPictureHandlerClicked = (props) => {
+  prevPictureHandlerClicked = () => {
     let i = this.state.index;
     if(i === 0)
     {
