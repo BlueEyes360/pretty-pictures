@@ -57,28 +57,24 @@ class App extends Component {
   }
 
   timerSliderValueChanged = () => {
-    document.getElementById("LoadingCard").style.display = "block";
     this.timingLoop = clearInterval(this.timingLoop);
     this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
     let newValue = document.getElementById("TimerSlider").value;
     newValue *= 1000;
     this.setState({transitionTime: newValue});
     document.getElementById("TimerValue").innerHTML = newValue/1000 + " s";
-    document.getElementById("LoadingCard").style.display = "none";
   }
 
   showInfoCardHandler = () => {
     let truth = this.state.showInfoCard;
     if(truth === false)
     {
-      // document.getElementById("InfoCard").style.display = "block";
       document.getElementById("InfoCard").className = "OpenInfo";
       document.getElementById("InfoCardDisplay").style.display = "none";
       this.setState({showInfoCard: true});
     }
     else if (truth === true)
     {
-      // document.getElementById("InfoCard").style.display = "none";
       document.getElementById("InfoCard").className = "CloseInfo";
       document.getElementById("InfoCardDisplay").style.display = "block";
       this.setState({showInfoCard: false});
@@ -89,7 +85,6 @@ class App extends Component {
     let truth = this.state.showMenuCard;
     if(truth === false)
     {
-      // document.getElementById("MenuContainer").style.display = "block";
       document.getElementById("MenuContainer").className = "Open";
       document.getElementById("MenuButton").style.display = "none";
       this.setState({showMenuCard: true});
@@ -97,7 +92,6 @@ class App extends Component {
     else if (truth === true)
     {
       document.getElementById("MenuContainer").className = "Close";
-      // document.getElementById("MenuContainer").style.display = "none";
       document.getElementById("MenuButton").style.display = "block";
       this.setState({showMenuCard: false});
     }
