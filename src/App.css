@@ -83,3 +83,10 @@
   border-radius: 50%;
   opacity: .7;
 }
+
+p {
+  font-size: 1.75vmin;
+  font-variant: small-caps;
+  font-style: oblique;
+  font-weight: 600;
+}
