@@ -5,7 +5,7 @@ import Screensaver from './components/Screensaver/Screensaver';
 import InfoCard from './components/InfoCard/InfoCard';
 import Loading from './components/Loading/Loading';
 import Menu from './components/Menu/Menu';
-import getart from './components/GetArt/GetArt';
+import GetArt from './components/GetArt/GetArt';
 
 import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
@@ -23,11 +23,11 @@ class App extends Component {
     transitionTime: 60000,
   }
 
-  dataHandler = () => {
-    let newData = getart();
-    this.setState({data: newData});
-    console.log("Inside dataHandler: newData = " + {newData});
-  }
+  // dataHandler = () => {
+  //   let newData = ();
+  //   this.setState({data: newData});
+  //   console.log("Inside dataHandler: newData = " + {newData});
+  // }
 
   nextPictureHandler = () => {
     let i = this.state.index;
@@ -138,6 +138,7 @@ class App extends Component {
         <Menu
           clickHandler={() => this.showMenuCardHandler()}
           changed={() => this.timerSliderValueChanged()} />
+        <GetArt />
       </div>
     );
   }
