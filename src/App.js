@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './App.css';
 
 import Screensaver from './components/Screensaver/Screensaver';
@@ -7,10 +8,12 @@ import Loading from './components/Loading/Loading';
 import Menu from './components/Menu/Menu';
 import GetArt from './components/GetArt/GetArt';
 
+
 import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
 import prevarrow from './assets/prevarrowbigwhite.png';
 import menubutton from './assets/menu.png';
+import choosefromdata from './components/ChooseFromData/ChooseFromData';
 
 class App extends Component {
 
@@ -31,12 +34,12 @@ class App extends Component {
 
   nextPictureHandler = () => {
     let i = this.state.index;
-    this.setState({index: (++i%5)});
+    this.setState({index: (++i%10)});
   }
 
   nextPictureHandlerClicked = () => {
     let i = this.state.index;
-    this.setState({index: (++i%5)});
+    this.setState({index: (++i%10)});
     this.timingLoop = clearInterval(this.timingLoop);
     this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
   }
@@ -49,7 +52,7 @@ class App extends Component {
     }
     else
     {
-      i = --i % 5;
+      i = --i % 10;
     }
     this.setState({index: i});
     this.timingLoop = clearInterval(this.timingLoop);
@@ -99,23 +102,55 @@ class App extends Component {
 
   timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
 
-  componentWillMount() {
+  componentDidMount() {
 
-    // if(this.state.data === 0)
-    // {
-    //   this.dataHandler();
-    //   console.log("Inside CmpWillMnt:dataHandler fired");
-    // }
+    axios.get("https://api.harvardartmuseums.org/image",
+    {
+        params: {
+            apikey: "ffedfb70-eb8e-11e8-bc5b-9fe3b7da5227",
+            classification: "Paintings",
+            fields: "title,provenance,dated,creditline,baseimageurl"
+        }
+    })
+    .then(response => {
+        this.setState({data: response.data});
+        // console.log(response);
+        if(this.state.data !== 0)
+        {
+            // choosefromdata(this.state.index, this.state.data);
+        }
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
 
+  }
+
+  static getDerivedStateFromError(error) {
+    // Update state so the next render will show the fallback UI.
+    return { hasError: true };
   }
 
   render() {
 
-    return (
-      <div className="App">
+    let background = <Loading />
+
+    if (this.state.data !== 0)
+    {
+      background =
         <Screensaver
           index={this.state.index}
-          changed={this.props.changed} />
+          changed={this.props.changed}
+          data={this.state.data} />
+    }
+
+    return (
+      <div className="App">
+        {background}
+        {/* <Screensaver
+          index={this.state.index}
+          changed={this.props.changed}
+          data={this.state.data} /> */}
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow Arrow'
           onClick={() => this.nextPictureHandlerClicked(this.index)} />
@@ -126,7 +161,7 @@ class App extends Component {
           src={menubutton} alt="Menu Button" className='Menu'
           onClick={() => this.showMenuCardHandler()}
           id="MenuButton" />
-        <Loading />
+        {/* <Loading /> */}
         <img
           src={questionMark} alt='Info Card Display Button'
           className='Arrow InfoCardDisplayButton'
@@ -138,7 +173,7 @@ class App extends Component {
         <Menu
           clickHandler={() => this.showMenuCardHandler()}
           changed={() => this.timerSliderValueChanged()} />
-        <GetArt />
+        {/* <GetArt /> */}
       </div>
     );
   }

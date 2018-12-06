@@ -11,10 +11,10 @@ const infocard = (props) => {
                 id="CloseInfoCard"
                 onClick={props.clickHandler}
                 className="Button" />
-            <p className="InfoCardText">Name: Stuff here</p>
-            <p className="InfoCardText">Artist:</p>
-            <p className="InfoCardText">Year:</p>
-            <p className="InfoCardText">Provided By:</p>
+            <p className="InfoCardText">Name: <span id="InfoCardName"></span></p>
+            <p className="InfoCardText">Artist: <span id="InfoCardArtist"></span></p>
+            <p className="InfoCardText">Year: <span id="InfoCardYear"></span></p>
+            <p className="InfoCardText">Provided By: <span id="InfoCardCredit"></span></p>
         </div>
     )
 }
