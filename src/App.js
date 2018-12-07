@@ -6,14 +6,11 @@ import Screensaver from './components/Screensaver/Screensaver';
 import InfoCard from './components/InfoCard/InfoCard';
 import Loading from './components/Loading/Loading';
 import Menu from './components/Menu/Menu';
-import GetArt from './components/GetArt/GetArt';
-
 
 import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
 import prevarrow from './assets/prevarrowbigwhite.png';
 import menubutton from './assets/menu.png';
-import choosefromdata from './components/ChooseFromData/ChooseFromData';
 
 class App extends Component {
 
@@ -116,21 +113,12 @@ class App extends Component {
     })
     .then(response => {
         this.setState({data: response.data});
-        console.log(response);
-        if(this.state.data !== 0)
-        {
-            // choosefromdata(this.state.index, this.state.data);
-        }
+        // console.log(response);
     })
     .catch(function (error) {
         console.log(error);
     });
 
-  }
-
-  static getDerivedStateFromError(error) {
-    // Update state so the next render will show the fallback UI.
-    return { hasError: true };
   }
 
   render() {
@@ -149,10 +137,6 @@ class App extends Component {
     return (
       <div className="App">
         {background}
-        {/* <Screensaver
-          index={this.state.index}
-          changed={this.props.changed}
-          data={this.state.data} /> */}
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow Arrow'
           onClick={() => this.nextPictureHandlerClicked(this.index)} />
@@ -175,7 +159,6 @@ class App extends Component {
         <Menu
           clickHandler={() => this.showMenuCardHandler()}
           changed={() => this.timerSliderValueChanged()} />
-        {/* <GetArt /> */}
       </div>
     );
   }
