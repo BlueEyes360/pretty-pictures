@@ -6,6 +6,7 @@ import Screensaver from './components/Screensaver/Screensaver';
 import InfoCard from './components/InfoCard/InfoCard';
 import Loading from './components/Loading/Loading';
 import Menu from './components/Menu/Menu';
+import ProcessImages from './components/ProcessImages/ProcessImages';
 
 import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
@@ -113,7 +114,7 @@ class App extends Component {
     })
     .then(response => {
         this.setState({data: response.data});
-        // console.log(response);
+        console.log(response);
     })
     .catch(function (error) {
         console.log(error);
@@ -128,11 +129,14 @@ class App extends Component {
     if (this.state.data !== 0)
     {
       background =
-        <Screensaver
-          index={this.state.index}
-          changed={this.props.changed}
-          data={this.state.data} />
-    }
+        <div>
+          <Screensaver
+            index={this.state.index}
+            changed={this.props.changed}
+            data={this.state.data} />
+          <ProcessImages data={this.state.data} />
+        </div>
+        }
 
     return (
       <div className="App">
@@ -159,6 +163,7 @@ class App extends Component {
         <Menu
           clickHandler={() => this.showMenuCardHandler()}
           changed={() => this.timerSliderValueChanged()} />
+        {/* <ProcessImages data={this.state.data} /> */}
       </div>
     );
   }

@@ -10,7 +10,7 @@ const choosefromdata = (index, props) => {
             document.getElementById("InfoCardYear").innerHTML = props.records[0].dated;
             document.getElementById("InfoCardCredit").innerHTML = props.records[0].creditline;
             // document.getElementById("Background").src = props.records[0].baseimageurl;
-            nextImage = props.records[1].primaryimageurl;
+            nextImage = props.records[0].primaryimageurl;
             break;
         case 1:
             document.getElementById("InfoCardName").innerHTML = props.records[1].title;
