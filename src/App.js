@@ -104,17 +104,19 @@ class App extends Component {
 
   componentDidMount() {
 
-    axios.get("https://api.harvardartmuseums.org/image",
+    axios.get("https://api.harvardartmuseums.org/object",
     {
         params: {
             apikey: "ffedfb70-eb8e-11e8-bc5b-9fe3b7da5227",
+            sort: "random",
+            // width: ">2000",
             classification: "Paintings",
-            fields: "title,provenance,dated,creditline,baseimageurl"
+            // fields: "title,provenance,dated,creditline,baseimageurl"
         }
     })
     .then(response => {
         this.setState({data: response.data});
-        // console.log(response);
+        console.log(response);
         if(this.state.data !== 0)
         {
             // choosefromdata(this.state.index, this.state.data);
