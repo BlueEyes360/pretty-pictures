@@ -6,6 +6,7 @@ import Screensaver from './components/Screensaver/Screensaver';
 import InfoCard from './components/InfoCard/InfoCard';
 import Loading from './components/Loading/Loading';
 import Menu from './components/Menu/Menu';
+import ProcessImages from './components/ProcessImages/ProcessImages';
 
 import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
@@ -45,7 +46,7 @@ class App extends Component {
     let i = this.state.index;
     if(i === 0)
     {
-      i = 4;
+      i = 9;
     }
     else
     {
@@ -108,7 +109,7 @@ class App extends Component {
             sort: "random",
             // width: ">2000",
             classification: "Paintings",
-            // fields: "title,provenance,dated,creditline,baseimageurl"
+            // fields: "title,provenance,dated,creditline,baseimageurl,primaryimageurl"
         }
     })
     .then(response => {
@@ -123,19 +124,23 @@ class App extends Component {
 
   render() {
 
-    let background = <Loading />
+    let background = <Loading id="InitialLoadingImage" />
 
     if (this.state.data !== 0)
     {
       background =
-        <Screensaver
-          index={this.state.index}
-          changed={this.props.changed}
-          data={this.state.data} />
+        <div>
+          <Screensaver
+            index={this.state.index}
+            changed={this.props.changed}
+            data={this.state.data} />
+          <ProcessImages data={this.state.data} />
+        </div>
     }
 
     return (
       <div className="App">
+        <Loading />
         {background}
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow Arrow'
@@ -147,7 +152,6 @@ class App extends Component {
           src={menubutton} alt="Menu Button" className='Menu'
           onClick={() => this.showMenuCardHandler()}
           id="MenuButton" />
-        {/* <Loading /> */}
         <img
           src={questionMark} alt='Info Card Display Button'
           className='Arrow InfoCardDisplayButton'

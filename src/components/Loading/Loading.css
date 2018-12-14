@@ -44,3 +44,16 @@
 #BottomLoading {
     z-index: 1;
 }
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#LoadingImage {
+    /* display: none; */
+    visibility: none;
+}
