@@ -46,7 +46,7 @@ class App extends Component {
     let i = this.state.index;
     if(i === 0)
     {
-      i = 4;
+      i = 9;
     }
     else
     {
@@ -124,7 +124,7 @@ class App extends Component {
 
   render() {
 
-    let background = <Loading />
+    let background = <Loading id="InitialLoadingImage" />
 
     if (this.state.data !== 0)
     {
@@ -136,10 +136,11 @@ class App extends Component {
             data={this.state.data} />
           <ProcessImages data={this.state.data} />
         </div>
-        }
+    }
 
     return (
       <div className="App">
+        <Loading />
         {background}
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow Arrow'
@@ -151,7 +152,6 @@ class App extends Component {
           src={menubutton} alt="Menu Button" className='Menu'
           onClick={() => this.showMenuCardHandler()}
           id="MenuButton" />
-        {/* <Loading /> */}
         <img
           src={questionMark} alt='Info Card Display Button'
           className='Arrow InfoCardDisplayButton'
