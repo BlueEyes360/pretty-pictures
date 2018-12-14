@@ -9,18 +9,19 @@ class ProcessImages extends Component {
 
     OutputDataHandler = () => {
         let beginningCount = this.state.count;
+        let addedImages = 0;
         for( let i = 1; i <= 10; i++)
         {
             let singleImageData = this.props.data.records[i];
             // console.log(singleImageData);
-            if(singleImageData.hasOwnProperty("title")
-            && singleImageData.hasOwnProperty("provenance")
-            && singleImageData.hasOwnProperty("dated")
-            && singleImageData.hasOwnProperty("creditline")
-            && (singleImageData.hasOwnProperty("baseimageurl")
-            || singleImageData.hasOwnProperty("primaryimageurl")))
+            if((singleImageData.hasOwnProperty("title") && singleImageData.title !== null)
+            && (singleImageData.hasOwnProperty("provenance") && singleImageData.provenance !== null)
+            && (singleImageData.hasOwnProperty("dated") && singleImageData.dated !== null)
+            && (singleImageData.hasOwnProperty("creditline") && singleImageData.creditline !== null)
+            && ((singleImageData.hasOwnProperty("baseimageurl") && singleImageData.baseimageurl !== null)
+            || (singleImageData.hasOwnProperty("primaryimageurl") && singleImageData.primaryimageurl !== null)))
             {
-                this.PostImageToServer(singleImageData, (beginningCount + i));
+                this.PostImageToServer(singleImageData, (beginningCount + addedImages++));
             }
         }
     }
@@ -31,7 +32,7 @@ class ProcessImages extends Component {
             let newCount = this.state.count + 1;
             this.setState({count: newCount});
             this.IncrementServerCount();
-            // console.log("PITS");
+            console.log("PITS");
             // console.log(response);
         })
         .catch(function (error) {
@@ -45,7 +46,7 @@ class ProcessImages extends Component {
         .then(response => {
             this.setState({count: response.data});
             console.log("GSC");
-            console.log(response);
+            // console.log(response);
             this.OutputDataHandler();
         })
         .catch(function (error) {
@@ -54,9 +55,10 @@ class ProcessImages extends Component {
     }
 
     IncrementServerCount = () => {
-        axios.put("https://noble-maxim-217223.firebaseio.com/count.json", this.state.count)
+        let currentCount = this.state.count;
+        axios.put("https://noble-maxim-217223.firebaseio.com/count.json", currentCount)
         .then(response => {
-            // console.log("ISC");
+            console.log("ISC");
             // console.log(response);
         })
         .catch(function (error) {

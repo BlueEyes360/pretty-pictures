@@ -109,12 +109,12 @@ class App extends Component {
             sort: "random",
             // width: ">2000",
             classification: "Paintings",
-            // fields: "title,provenance,dated,creditline,baseimageurl"
+            // fields: "title,provenance,dated,creditline,baseimageurl,primaryimageurl"
         }
     })
     .then(response => {
         this.setState({data: response.data});
-        console.log(response);
+        // console.log(response);
     })
     .catch(function (error) {
         console.log(error);
@@ -163,7 +163,6 @@ class App extends Component {
         <Menu
           clickHandler={() => this.showMenuCardHandler()}
           changed={() => this.timerSliderValueChanged()} />
-        {/* <ProcessImages data={this.state.data} /> */}
       </div>
     );
   }

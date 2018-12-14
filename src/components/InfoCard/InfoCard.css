@@ -1,7 +1,7 @@
 #InfoCard {
     position: absolute;
     height: 12vh;
-    width: 30vw;
+    width: 50vw;
     right: 1vmin;
     bottom: 1vmin;
     background-color: lightgray;
@@ -37,9 +37,30 @@
     padding: .25vmin;
     margin: .25vmin;
     position: relative;
-    width: 100%;
+    width: 90%;
+    height: 15%;
+    /* border: 1px solid black; */
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 #CloseInfoCard {
     z-index: inherit;
 }
+
+@media screen and (max-width: 600px) {
+    #InfoCard {
+        width: 70vw;
+        margin: .1vmin .25vmin;
+    }
+}
+
+/* .InfoCardText span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: 1px solid blue;
+    position: static;
+} */
