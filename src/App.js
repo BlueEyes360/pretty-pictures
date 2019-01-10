@@ -6,7 +6,7 @@ import Screensaver from './components/Screensaver/Screensaver';
 import InfoCard from './components/InfoCard/InfoCard';
 import Loading from './components/Loading/Loading';
 import Menu from './components/Menu/Menu';
-import ProcessImages from './components/ProcessImages/ProcessImages';
+import ProcessImages from './containers/ProcessImages/ProcessImages';
 
 import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
@@ -140,7 +140,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Loading />
+        <Loading id="LoadingCard" />
         {background}
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow Arrow'
