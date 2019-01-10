@@ -25,12 +25,6 @@ class App extends Component {
     transitionTime: 60000,
   }
 
-  // dataHandler = () => {
-  //   let newData = ();
-  //   this.setState({data: newData});
-  //   console.log("Inside dataHandler: newData = " + {newData});
-  // }
-
   nextPictureHandler = () => {
     let i = this.state.index;
     this.setState({index: (++i % this.state.maxIndex)});
@@ -148,9 +142,12 @@ class App extends Component {
 
   componentDidMount() {
 
+    document.getElementById("LoadingCard").style.visibility = "visible";
+
     this.handleNewImages();
     this.getGoodImagesForDisplay();
 
+    document.getElementById("LoadingCard").style.visibility = "hidden";
   }
 
   render() {
