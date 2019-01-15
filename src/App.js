@@ -3,10 +3,11 @@ import axios from 'axios';
 import './App.css';
 
 import Screensaver from './components/Screensaver/Screensaver';
+import Splash from './components/Splash/Splash';
 import InfoCard from './components/InfoCard/InfoCard';
 import Loading from './components/Loading/Loading';
 import Menu from './components/Menu/Menu';
-import ProcessImages from './components/ProcessImages/ProcessImages';
+import ProcessImages from './containers/ProcessImages/ProcessImages';
 
 import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
@@ -17,27 +18,23 @@ class App extends Component {
 
   state = {
     index: 0,
-    maxIndex: 5,
-    data: 0,
+    maxIndex: 0,
+    images: 0,
+    newImages: 0,
     showInfoCard: false,
     showMenuCard: false,
+    showSplash: true,
     transitionTime: 60000,
   }
 
-  // dataHandler = () => {
-  //   let newData = ();
-  //   this.setState({data: newData});
-  //   console.log("Inside dataHandler: newData = " + {newData});
-  // }
-
   nextPictureHandler = () => {
     let i = this.state.index;
-    this.setState({index: (++i%10)});
+    this.setState({index: (++i % this.state.maxIndex)});
   }
 
   nextPictureHandlerClicked = () => {
     let i = this.state.index;
-    this.setState({index: (++i%10)});
+    this.setState({index: (++i % this.state.maxIndex)});
     this.timingLoop = clearInterval(this.timingLoop);
     this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
   }
@@ -46,11 +43,11 @@ class App extends Component {
     let i = this.state.index;
     if(i === 0)
     {
-      i = 9;
+      i = this.state.maxIndex - 1;
     }
     else
     {
-      i = --i % 10;
+      i = --i % this.state.maxIndex;
     }
     this.setState({index: i});
     this.timingLoop = clearInterval(this.timingLoop);
@@ -82,6 +79,22 @@ class App extends Component {
     }
   }
 
+  showSplashHandler = () => {
+    let truth = this.state.showSplash;
+    if(truth === false)
+    {
+      document.getElementById("IntroSplash").style.display = "block";
+      document.getElementById("IntroSplashCard").style.display = "block";
+      this.setState({showSplash: true});
+    }
+    else if (truth === true)
+    {
+      document.getElementById("IntroSplash").style.display = "none";
+      document.getElementById("IntroSplashCard").style.display = "none";
+      this.setState({showSplash: false});
+    }
+  }
+
   showMenuCardHandler = () => {
     let truth = this.state.showMenuCard;
     if(truth === false)
@@ -98,10 +111,7 @@ class App extends Component {
     }
   }
 
-  timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
-
-  componentDidMount() {
-
+  handleNewImages = () => {
     axios.get("https://api.harvardartmuseums.org/object",
     {
         params: {
@@ -113,7 +123,7 @@ class App extends Component {
         }
     })
     .then(response => {
-        this.setState({data: response.data});
+        this.setState({newImages: response.data});
         // console.log(response);
     })
     .catch(function (error) {
@@ -122,25 +132,64 @@ class App extends Component {
 
   }
 
+  getGoodImagesForDisplay = () => {
+    let numImages = 0;
+    let goodImages = 0;
+
+    axios.get("https://noble-maxim-217223.firebaseio.com/count.json")
+      .then(response => {
+          numImages = response.data - 1;
+          this.setState({maxIndex: numImages});
+      })
+      .catch(function (error) {
+          console.log(error);
+      });
+
+      axios.get("https://noble-maxim-217223.firebaseio.com/good_images.json")
+      .then(response => {
+          goodImages = response.data;
+          this.setState({images: goodImages});
+      })
+      .catch(function (error) {
+          console.log(error);
+      });
+
+  }
+
+  timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
+
+  componentDidMount() {
+
+    document.getElementById("LoadingCard").style.visibility = "visible";
+
+    this.handleNewImages();
+    this.getGoodImagesForDisplay();
+
+    document.getElementById("LoadingCard").style.visibility = "hidden";
+  }
+
   render() {
 
     let background = <Loading id="InitialLoadingImage" />
 
-    if (this.state.data !== 0)
+    if (this.state.images !== 0)
     {
       background =
         <div>
           <Screensaver
             index={this.state.index}
             changed={this.props.changed}
-            data={this.state.data} />
-          <ProcessImages data={this.state.data} />
+            data={this.state.images} />
+          <ProcessImages data={this.state.newImages} />
         </div>
     }
 
     return (
       <div className="App">
-        <Loading />
+        <Loading id="LoadingCard" />
+        <Splash
+          clickHandler={() => this.showSplashHandler()}
+          truth={this.state.showSplash}/>
         {background}
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow Arrow'

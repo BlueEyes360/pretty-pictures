@@ -32,7 +32,7 @@ class ProcessImages extends Component {
             let newCount = this.state.count + 1;
             this.setState({count: newCount});
             this.IncrementServerCount();
-            console.log("PITS");
+            // console.log("PITS");
             // console.log(response);
         })
         .catch(function (error) {
@@ -45,7 +45,7 @@ class ProcessImages extends Component {
         axios.get("https://noble-maxim-217223.firebaseio.com/count.json")
         .then(response => {
             this.setState({count: response.data});
-            console.log("GSC");
+            // console.log("GSC");
             // console.log(response);
             this.OutputDataHandler();
         })
@@ -58,7 +58,7 @@ class ProcessImages extends Component {
         let currentCount = this.state.count;
         axios.put("https://noble-maxim-217223.firebaseio.com/count.json", currentCount)
         .then(response => {
-            console.log("ISC");
+            // console.log("ISC");
             // console.log(response);
         })
         .catch(function (error) {
@@ -69,7 +69,7 @@ class ProcessImages extends Component {
 
 
     componentDidMount() {
-        this.GetServerCount();
+        this.GetServerCount();          
     }
 
     render() {
