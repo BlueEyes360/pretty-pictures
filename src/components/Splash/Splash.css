@@ -1,0 +1,41 @@
+.SplashContainer {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    display: block;
+    margin: 0px;
+    background-color: black;
+    opacity: .6;
+}
+
+.SplashCard {
+    opacity: 1.0;
+    position: absolute;
+    height: 60vh;
+    width: 60vw;
+    z-index: 100;
+    border-radius: 2vmin;
+    background-image: url("../../assets/SplashBackground.png");
+    top: 20vh;
+    right: 20vw;
+    text-align: center;
+}
+
+.SplashCard p, h1, h6 {
+    color: white;
+    font-size: 200%;
+    padding: .25vmin;
+    margin: .25vmin;
+    position: relative;
+}
+
+.SplashCard h6 {
+    top: 75%;
+    font-size: 150%;
+}
+
+#IntroSplash {
+    /* background-color: transparent; */
+}
+

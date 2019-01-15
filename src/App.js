@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 import Screensaver from './components/Screensaver/Screensaver';
+import Splash from './components/Splash/Splash';
 import InfoCard from './components/InfoCard/InfoCard';
 import Loading from './components/Loading/Loading';
 import Menu from './components/Menu/Menu';
@@ -22,6 +23,7 @@ class App extends Component {
     newImages: 0,
     showInfoCard: false,
     showMenuCard: false,
+    showSplash: true,
     transitionTime: 60000,
   }
 
@@ -74,6 +76,22 @@ class App extends Component {
       document.getElementById("InfoCard").className = "CloseInfo";
       document.getElementById("InfoCardDisplay").style.display = "block";
       this.setState({showInfoCard: false});
+    }
+  }
+
+  showSplashHandler = () => {
+    let truth = this.state.showSplash;
+    if(truth === false)
+    {
+      document.getElementById("IntroSplash").style.display = "block";
+      document.getElementById("IntroSplashCard").style.display = "block";
+      this.setState({showSplash: true});
+    }
+    else if (truth === true)
+    {
+      document.getElementById("IntroSplash").style.display = "none";
+      document.getElementById("IntroSplashCard").style.display = "none";
+      this.setState({showSplash: false});
     }
   }
 
@@ -169,6 +187,9 @@ class App extends Component {
     return (
       <div className="App">
         <Loading id="LoadingCard" />
+        <Splash
+          clickHandler={() => this.showSplashHandler()}
+          truth={this.state.showSplash}/>
         {background}
         <img
           src={nextarrow} alt="Next Arrow" className='NextArrow Arrow'
