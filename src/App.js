@@ -13,6 +13,7 @@ import questionMark from './assets/help-circle.png';
 import nextarrow from './assets/nextarrowbigwhite.png';
 import prevarrow from './assets/prevarrowbigwhite.png';
 import menubutton from './assets/menu.png';
+import { HAMKEY } from './APIKeys';
 
 class App extends Component {
 
@@ -115,7 +116,7 @@ class App extends Component {
     axios.get("https://api.harvardartmuseums.org/object",
     {
         params: {
-            apikey: "ffedfb70-eb8e-11e8-bc5b-9fe3b7da5227",
+            apikey: HAMKEY,
             sort: "random",
             // width: ">2000",
             classification: "Paintings",
