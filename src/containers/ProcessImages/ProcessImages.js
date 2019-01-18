@@ -69,7 +69,7 @@ class ProcessImages extends Component {
 
 
     componentDidMount() {
-        this.GetServerCount();          
+        this.GetServerCount();
     }
 
     render() {
