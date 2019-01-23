@@ -2,9 +2,7 @@ Quick Info on this Project (to be extended later): The idea is to have a web app
 
 Current Status:
 
-The app now pulls images from the Harvard Art Museum API. In it's current iteration it will pull images that don't actually show, but that will be corrected later.
-
-There is now a check to see if the randomly pulled images from the API have all the current attributes that I am looking for (image, artist, date, creditline) and any that contain all of those fields will be sent to a Google Firebase console. This is for later observation of images that display correctly so I can make sure the images will always display properly. Also just for practice using Firebase and API calls.
+The app currently pulls 10 random portraits from the Harvard Art Museum. There is now a check to see if the randomly pulled images from the API have all the current attributes that I am looking for (image, artist, date, creditline) and any that contain all of those fields will be sent to a Google Firebase database. These good images are used for display in the application.
 
 The timer now works correctly, resetting on manual image change to the transition length stored in state.
 
