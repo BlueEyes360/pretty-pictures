@@ -10,9 +10,6 @@ const splash = (props) => {
             </div>
             <div className="SplashCard" id="IntroSplashCard"
                 onClick={() => props.clickHandler()} value={props.index}>
-                    <h1>pretty-pictures</h1>
-                    <p>This application is still under development</p>
-                    <h6>Click Anywhere to continue....</h6>
             </div>
         </div>
     )

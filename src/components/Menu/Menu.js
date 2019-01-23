@@ -1,4 +1,5 @@
 import React from 'react';
+import Timer from './Timer/Timer';
 
 import closeButton from '../../assets/close-circle.png';
 
@@ -12,18 +13,8 @@ const menu = (props) => {
                 id='CloseMenuButton'
                 onClick={props.clickHandler}
                 className='Button' />
-            <p>Timer Setting: <span id="TimerValue">60 s</span> </p>
-            <input type="range" min="1" max="120" defaultValue="60"
-                className="slider"
-                id="TimerSlider"
-                list="marks"
-                onChange={props.changed} />
-            <datalist id="marks">
-                <option value="1" />
-                <option value="60" />
-                <option value="120" />
-            </datalist>
-
+            <Timer
+                changeValue={props.changed}/>
         </div>
     )
 }
