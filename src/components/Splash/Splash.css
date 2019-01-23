@@ -17,6 +17,8 @@
     z-index: 100;
     border-radius: 2vmin;
     background-image: url("../../assets/SplashBackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
     top: 20vh;
     right: 20vw;
     text-align: center;
