@@ -1,19 +1,20 @@
-    import React, { Component } from 'react';
-    import axios from 'axios';
-    import './App.css';
+import React, { Component } from 'react';
+import axios from 'axios';
+import './App.css';
 
-    import Screensaver from './components/Screensaver/Screensaver';
-    import Splash from './components/Splash/Splash';
-    import InfoCard from './components/InfoCard/InfoCard';
-    import Loading from './components/Loading/Loading';
-    import Menu from './components/Menu/Menu';
-    import ProcessImages from './containers/ProcessImages/ProcessImages';
-    import UI from './components/UI/UI';
+import Screensaver from './components/Screensaver/Screensaver';
+import Splash from './components/Splash/Splash';
+import InfoCard from './components/InfoCard/InfoCard';
+import Loading from './components/Loading/Loading';
+import Menu from './components/Menu/Menu';
+import ProcessImages from './containers/ProcessImages/ProcessImages';
+import UI from './components/UI/UI';
 
-    import { HAMKEY } from './APIKeys';
+import { HAMKEY } from './APIKeys';
 import FindDimensions from './components/FindDimensions/FindDimensions';
+import choosefromdata from './components/Screensaver/ChooseFromData/ChooseFromData';
 
-    class App extends Component {
+class App extends Component {
 
     state = {
         index: 0,
@@ -27,9 +28,20 @@ import FindDimensions from './components/FindDimensions/FindDimensions';
         transitionTime: 60000,
     }
 
+    setBackgroundImage = (backgroundIndex) => {
+        let urlString = 'url("' + this.state.images[backgroundIndex].primaryimageurl + '")';
+        // console.log({urlString});
+        document.getElementById("InfoCardName").innerHTML = this.state.images[backgroundIndex].title;
+        document.getElementById("InfoCardArtist").innerHTML = this.state.images[backgroundIndex].provenance;
+        document.getElementById("InfoCardYear").innerHTML = this.state.images[backgroundIndex].dated;
+        document.getElementById("InfoCardCredit").innerHTML = this.state.images[backgroundIndex].creditline;
+        document.getElementById("Background").style.backgroundImage = urlString;
+    }
+
     randomPictureHandler = () => {
         let randomNumber = Math.floor(Math.random() * this.state.maxIndex);
         this.setState({index: randomNumber});
+        this.setBackgroundImage(randomNumber);
     }
 
     randomCheckboxChanged = () => {
@@ -46,6 +58,7 @@ import FindDimensions from './components/FindDimensions/FindDimensions';
         {
             let i = this.state.index;
             this.setState({index: (++i % this.state.maxIndex)});
+            this.setBackgroundImage(this.state.index);
         }
     }
 
@@ -58,6 +71,7 @@ import FindDimensions from './components/FindDimensions/FindDimensions';
         {
             let i = this.state.index;
             this.setState({index: (++i % this.state.maxIndex)});
+            this.setBackgroundImage(this.state.index);
         }
         this.timingLoop = clearInterval(this.timingLoop);
         this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
@@ -80,6 +94,7 @@ import FindDimensions from './components/FindDimensions/FindDimensions';
             i = --i % this.state.maxIndex;
             }
             this.setState({index: i});
+            this.setBackgroundImage(this.state.index);
         }
         this.timingLoop = clearInterval(this.timingLoop);
         this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
@@ -256,6 +271,6 @@ import FindDimensions from './components/FindDimensions/FindDimensions';
         </div>
         );
     }
-    }
 
-    export default App;
+}
+export default App;
