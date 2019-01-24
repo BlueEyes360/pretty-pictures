@@ -5,7 +5,7 @@ import closeButton from '../../assets/close-circle.png';
 
 import './Menu.css';
 
-const menu = (props) => {
+const Menu = (props) => {
 
     return (
         <div id="MenuContainer" className="Close">
@@ -19,4 +19,4 @@ const menu = (props) => {
     )
 }
 
-export default menu;
+export default Menu;

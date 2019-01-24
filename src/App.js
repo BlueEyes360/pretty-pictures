@@ -65,15 +65,15 @@
         let truth = this.state.showInfoCard;
         if(truth === false)
         {
-        document.getElementById("InfoCard").className = "OpenInfo";
-        document.getElementById("InfoCardDisplay").style.display = "none";
-        this.setState({showInfoCard: true});
+            document.getElementById("InfoCard").className = "OpenInfo";
+            document.getElementById("InfoCardDisplay").style.display = "none";
+            this.setState({showInfoCard: true});
         }
         else if (truth === true)
         {
-        document.getElementById("InfoCard").className = "CloseInfo";
-        document.getElementById("InfoCardDisplay").style.display = "block";
-        this.setState({showInfoCard: false});
+            document.getElementById("InfoCard").className = "CloseInfo";
+            document.getElementById("InfoCardDisplay").style.display = "block";
+            this.setState({showInfoCard: false});
         }
     }
 
@@ -160,7 +160,7 @@
 
         document.getElementById("LoadingCard").style.visibility = "visible";
 
-        this.handleNewImages();
+        // this.handleNewImages();
         this.getGoodImagesForDisplay();
 
         document.getElementById("LoadingCard").style.visibility = "hidden";
@@ -173,13 +173,13 @@
         if (this.state.images !== 0)
         {
         background =
-            <div>
+            <>
                 <Screensaver
                     index={this.state.index}
                     changed={this.props.changed}
                     data={this.state.images} />
-                <ProcessImages data={this.state.newImages} />
-            </div>
+                {/* <ProcessImages data={this.state.newImages} /> */}
+            </>
         }
 
         return (
@@ -190,17 +190,22 @@
                 truth={this.state.showSplash}/>
             {background}
             <UI
+                data={this.state.data}
                 imageIndex={this.state.index}
                 nextClickHandler={this.nextPictureHandlerClicked}
                 prevClickHandler={this.prevPictureHandlerClicked}
                 menuClickHandler={this.showMenuCardHandler}
-                infoClickHandler={this.showInfoCardHandler}/>
+                infoClickHandler={this.showInfoCardHandler}
+                timerChanged={this.timerSliderValueChanged}
+            />
             <InfoCard
                 data={this.state.data}
-                clickHandler={() => this.showInfoCardHandler()}/>
+                clickHandler={() => this.showInfoCardHandler()}
+            />
             <Menu
                 clickHandler={() => this.showMenuCardHandler()}
-                changed={() => this.timerSliderValueChanged()}/>
+                changed={() => this.timerSliderValueChanged()}
+            />
         </div>
         );
     }

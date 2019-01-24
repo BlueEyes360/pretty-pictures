@@ -1,7 +1,8 @@
 import React from 'react';
 import './Screensaver.css';
 
-import choosefromdata from '../ChooseFromData/ChooseFromData';
+// import choosefromdata from '../ChooseFromData/ChooseFromData';
+import choosefromdata from '../Screensaver/ChooseFromData/ChooseFromData';
 
 const screensaver = (props) => {
 
