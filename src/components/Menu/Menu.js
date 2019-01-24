@@ -1,5 +1,6 @@
 import React from 'react';
 import Timer from './Timer/Timer';
+import RandomChoice from './RandomChoice/RandomChoice';
 
 import closeButton from '../../assets/close-circle.png';
 
@@ -15,6 +16,10 @@ const Menu = (props) => {
                 className='Button' />
             <Timer
                 changeValue={props.changed}/>
+            <RandomChoice
+                showRandom={props.randomImages}
+                changeCheckBox={props.randomChange}
+            />
         </div>
     )
 }

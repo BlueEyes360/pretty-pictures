@@ -10,7 +10,8 @@ const Timer = (props) => {
                 id="TimerSlider"
                 list="marks"
                 step="1"
-                onChange={props.changeValue} />
+                onChange={props.changeValue}
+            />
         </>
     )
 }

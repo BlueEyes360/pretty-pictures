@@ -19,37 +19,70 @@
         maxIndex: 0,
         images: 0,
         newImages: 0,
+        showRandomImages: true,
         showInfoCard: false,
         showMenuCard: false,
         showSplash: true,
         transitionTime: 60000,
     }
 
+    randomPictureHandler = () => {
+        let randomNumber = Math.floor(Math.random() * this.state.maxIndex);
+        this.setState({index: randomNumber});
+    }
+
+    randomCheckboxChanged = () => {
+        let randomValue = document.getElementById("RandomChoice").checked;
+        this.setState({showRandomImages: randomValue});
+    }
+
     nextPictureHandler = () => {
-        let i = this.state.index;
-        this.setState({index: (++i % this.state.maxIndex)});
+        if (this.state.showRandomImages === true)
+        {
+            this.randomPictureHandler();
+        }
+        else
+        {
+            let i = this.state.index;
+            this.setState({index: (++i % this.state.maxIndex)});
+        }
     }
 
     nextPictureHandlerClicked = () => {
-        let i = this.state.index;
-        this.setState({index: (++i % this.state.maxIndex)});
+        if (this.state.showRandomImages === true)
+        {
+            this.randomPictureHandler();
+        }
+        else
+        {
+            let i = this.state.index;
+            this.setState({index: (++i % this.state.maxIndex)});
+        }
         this.timingLoop = clearInterval(this.timingLoop);
         this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
     }
 
     prevPictureHandlerClicked = () => {
-        let i = this.state.index;
-        if(i === 0)
+        if (this.state.showRandomImages === true)
         {
-        i = this.state.maxIndex - 1;
+            this.randomPictureHandler();
         }
         else
         {
-        i = --i % this.state.maxIndex;
+            let i = this.state.index;
+            if(i === 0)
+            {
+            i = this.state.maxIndex - 1;
+            }
+            else
+            {
+            i = --i % this.state.maxIndex;
+            }
+            this.setState({index: i});
         }
-        this.setState({index: i});
         this.timingLoop = clearInterval(this.timingLoop);
         this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
+
     }
 
     timerSliderValueChanged = () => {
@@ -147,6 +180,12 @@
         .then(response => {
             goodImages = response.data;
             this.setState({images: goodImages});
+            if (this.state.showRandomImages === true)
+            {
+                this.randomPictureHandler();
+                this.timingLoop = clearInterval(this.timingLoop);
+                this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
+            }
         })
         .catch(function (error) {
             console.log(error);
@@ -162,6 +201,7 @@
 
         // this.handleNewImages();
         this.getGoodImagesForDisplay();
+        // this.randomPictureHandler();
 
         document.getElementById("LoadingCard").style.visibility = "hidden";
     }
@@ -205,6 +245,8 @@
             <Menu
                 clickHandler={() => this.showMenuCardHandler()}
                 changed={() => this.timerSliderValueChanged()}
+                randomImages={this.state.showRandomImages}
+                randomChange={() => this.randomCheckboxChanged()}
             />
         </div>
         );
