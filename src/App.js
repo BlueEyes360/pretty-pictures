@@ -11,6 +11,7 @@
     import UI from './components/UI/UI';
 
     import { HAMKEY } from './APIKeys';
+import FindDimensions from './components/FindDimensions/FindDimensions';
 
     class App extends Component {
 
@@ -186,6 +187,7 @@
                 this.timingLoop = clearInterval(this.timingLoop);
                 this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
             }
+            document.getElementById("LoadingCard").style.visibility = "hidden";
         })
         .catch(function (error) {
             console.log(error);
@@ -201,9 +203,6 @@
 
         // this.handleNewImages();
         this.getGoodImagesForDisplay();
-        // this.randomPictureHandler();
-
-        document.getElementById("LoadingCard").style.visibility = "hidden";
     }
 
     render() {
@@ -212,14 +211,18 @@
 
         if (this.state.images !== 0)
         {
-        background =
-            <>
-                <Screensaver
-                    index={this.state.index}
-                    changed={this.props.changed}
-                    data={this.state.images} />
-                {/* <ProcessImages data={this.state.newImages} /> */}
-            </>
+            background =
+                <>
+                    <Screensaver
+                        index={this.state.index}
+                        changed={this.props.changed}
+                        data={this.state.images}
+                    />
+                    {/* <FindDimensions
+                        data={this.state.images}
+                    /> */}
+                    {/* <ProcessImages data={this.state.newImages} /> */}
+                </>
         }
 
         return (
@@ -228,7 +231,9 @@
             <Splash
                 clickHandler={() => this.showSplashHandler()}
                 truth={this.state.showSplash}/>
+
             {background}
+
             <UI
                 data={this.state.data}
                 imageIndex={this.state.index}
