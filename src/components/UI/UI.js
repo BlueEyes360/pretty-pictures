@@ -8,7 +8,7 @@ import menubutton from '../../assets/menu.png';
 const UI = (props) => {
 
     return (
-        <div>
+        <>
             <img
                 src={nextarrow} alt="Next Arrow" className='NextArrow Arrow'
                 onClick={() => props.nextClickHandler(props.imageIndex)} />
@@ -24,7 +24,7 @@ const UI = (props) => {
                 className='Arrow InfoCardDisplayButton'
                 onClick={() => props.infoClickHandler()}
                 id='InfoCardDisplay' />
-        </div>
+        </>
     )
 }
 

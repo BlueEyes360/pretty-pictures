@@ -1,11 +1,12 @@
 import React from 'react';
 import Timer from './Timer/Timer';
+import RandomChoice from './RandomChoice/RandomChoice';
 
 import closeButton from '../../assets/close-circle.png';
 
 import './Menu.css';
 
-const menu = (props) => {
+const Menu = (props) => {
 
     return (
         <div id="MenuContainer" className="Close">
@@ -15,8 +16,12 @@ const menu = (props) => {
                 className='Button' />
             <Timer
                 changeValue={props.changed}/>
+            <RandomChoice
+                showRandom={props.randomImages}
+                changeCheckBox={props.randomChange}
+            />
         </div>
     )
 }
 
-export default menu;
+export default Menu;

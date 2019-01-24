@@ -75,9 +75,7 @@ class ProcessImages extends Component {
     render() {
 
         return (
-            <div>
-
-            </div>
+            <></>
         )
 
     }

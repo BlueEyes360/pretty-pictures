@@ -1,55 +1,104 @@
-    import React, { Component } from 'react';
-    import axios from 'axios';
-    import './App.css';
+import React, { Component } from 'react';
+import axios from 'axios';
+import './App.css';
 
-    import Screensaver from './components/Screensaver/Screensaver';
-    import Splash from './components/Splash/Splash';
-    import InfoCard from './components/InfoCard/InfoCard';
-    import Loading from './components/Loading/Loading';
-    import Menu from './components/Menu/Menu';
-    import ProcessImages from './containers/ProcessImages/ProcessImages';
-    import UI from './components/UI/UI';
+import Screensaver from './components/Screensaver/Screensaver';
+import Splash from './components/Splash/Splash';
+import InfoCard from './components/InfoCard/InfoCard';
+import Loading from './components/Loading/Loading';
+import Menu from './components/Menu/Menu';
+import ProcessImages from './containers/ProcessImages/ProcessImages';
+import UI from './components/UI/UI';
 
-    import { HAMKEY } from './APIKeys';
+import { HAMKEY } from './APIKeys';
+import FindDimensions from './components/FindDimensions/FindDimensions';
+import choosefromdata from './components/Screensaver/ChooseFromData/ChooseFromData';
 
-    class App extends Component {
+class App extends Component {
 
     state = {
         index: 0,
         maxIndex: 0,
         images: 0,
         newImages: 0,
+        showRandomImages: true,
         showInfoCard: false,
         showMenuCard: false,
         showSplash: true,
         transitionTime: 60000,
     }
 
+    setBackgroundImage = (backgroundIndex) => {
+        let urlString = 'url("' + this.state.images[backgroundIndex].primaryimageurl + '")';
+        // console.log({urlString});
+        document.getElementById("InfoCardName").innerHTML = this.state.images[backgroundIndex].title;
+        document.getElementById("InfoCardArtist").innerHTML = this.state.images[backgroundIndex].provenance;
+        document.getElementById("InfoCardYear").innerHTML = this.state.images[backgroundIndex].dated;
+        document.getElementById("InfoCardCredit").innerHTML = this.state.images[backgroundIndex].creditline;
+        document.getElementById("Background").style.backgroundImage = urlString;
+    }
+
+    randomPictureHandler = () => {
+        let randomNumber = Math.floor(Math.random() * this.state.maxIndex);
+        this.setState({index: randomNumber});
+        this.setBackgroundImage(randomNumber);
+    }
+
+    randomCheckboxChanged = () => {
+        let randomValue = document.getElementById("RandomChoice").checked;
+        this.setState({showRandomImages: randomValue});
+    }
+
     nextPictureHandler = () => {
-        let i = this.state.index;
-        this.setState({index: (++i % this.state.maxIndex)});
+        if (this.state.showRandomImages === true)
+        {
+            this.randomPictureHandler();
+        }
+        else
+        {
+            let i = this.state.index;
+            this.setState({index: (++i % this.state.maxIndex)});
+            this.setBackgroundImage(this.state.index);
+        }
     }
 
     nextPictureHandlerClicked = () => {
-        let i = this.state.index;
-        this.setState({index: (++i % this.state.maxIndex)});
+        if (this.state.showRandomImages === true)
+        {
+            this.randomPictureHandler();
+        }
+        else
+        {
+            let i = this.state.index;
+            this.setState({index: (++i % this.state.maxIndex)});
+            this.setBackgroundImage(this.state.index);
+        }
         this.timingLoop = clearInterval(this.timingLoop);
         this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
     }
 
     prevPictureHandlerClicked = () => {
-        let i = this.state.index;
-        if(i === 0)
+        if (this.state.showRandomImages === true)
         {
-        i = this.state.maxIndex - 1;
+            this.randomPictureHandler();
         }
         else
         {
-        i = --i % this.state.maxIndex;
+            let i = this.state.index;
+            if(i === 0)
+            {
+            i = this.state.maxIndex - 1;
+            }
+            else
+            {
+            i = --i % this.state.maxIndex;
+            }
+            this.setState({index: i});
+            this.setBackgroundImage(this.state.index);
         }
-        this.setState({index: i});
         this.timingLoop = clearInterval(this.timingLoop);
         this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
+
     }
 
     timerSliderValueChanged = () => {
@@ -65,15 +114,15 @@
         let truth = this.state.showInfoCard;
         if(truth === false)
         {
-        document.getElementById("InfoCard").className = "OpenInfo";
-        document.getElementById("InfoCardDisplay").style.display = "none";
-        this.setState({showInfoCard: true});
+            document.getElementById("InfoCard").className = "OpenInfo";
+            document.getElementById("InfoCardDisplay").style.display = "none";
+            this.setState({showInfoCard: true});
         }
         else if (truth === true)
         {
-        document.getElementById("InfoCard").className = "CloseInfo";
-        document.getElementById("InfoCardDisplay").style.display = "block";
-        this.setState({showInfoCard: false});
+            document.getElementById("InfoCard").className = "CloseInfo";
+            document.getElementById("InfoCardDisplay").style.display = "block";
+            this.setState({showInfoCard: false});
         }
     }
 
@@ -147,6 +196,13 @@
         .then(response => {
             goodImages = response.data;
             this.setState({images: goodImages});
+            if (this.state.showRandomImages === true)
+            {
+                this.randomPictureHandler();
+                this.timingLoop = clearInterval(this.timingLoop);
+                this.timingLoop = setInterval(this.nextPictureHandler, this.state.transitionTime);
+            }
+            document.getElementById("LoadingCard").style.visibility = "hidden";
         })
         .catch(function (error) {
             console.log(error);
@@ -160,10 +216,8 @@
 
         document.getElementById("LoadingCard").style.visibility = "visible";
 
-        this.handleNewImages();
+        // this.handleNewImages();
         this.getGoodImagesForDisplay();
-
-        document.getElementById("LoadingCard").style.visibility = "hidden";
     }
 
     render() {
@@ -172,14 +226,18 @@
 
         if (this.state.images !== 0)
         {
-        background =
-            <div>
-                <Screensaver
-                    index={this.state.index}
-                    changed={this.props.changed}
-                    data={this.state.images} />
-                <ProcessImages data={this.state.newImages} />
-            </div>
+            background =
+                <>
+                    <Screensaver
+                        index={this.state.index}
+                        changed={this.props.changed}
+                        data={this.state.images}
+                    />
+                    {/* <FindDimensions
+                        data={this.state.images}
+                    /> */}
+                    {/* <ProcessImages data={this.state.newImages} /> */}
+                </>
         }
 
         return (
@@ -188,22 +246,31 @@
             <Splash
                 clickHandler={() => this.showSplashHandler()}
                 truth={this.state.showSplash}/>
+
             {background}
+
             <UI
+                data={this.state.data}
                 imageIndex={this.state.index}
                 nextClickHandler={this.nextPictureHandlerClicked}
                 prevClickHandler={this.prevPictureHandlerClicked}
                 menuClickHandler={this.showMenuCardHandler}
-                infoClickHandler={this.showInfoCardHandler}/>
+                infoClickHandler={this.showInfoCardHandler}
+                timerChanged={this.timerSliderValueChanged}
+            />
             <InfoCard
                 data={this.state.data}
-                clickHandler={() => this.showInfoCardHandler()}/>
+                clickHandler={() => this.showInfoCardHandler()}
+            />
             <Menu
                 clickHandler={() => this.showMenuCardHandler()}
-                changed={() => this.timerSliderValueChanged()}/>
+                changed={() => this.timerSliderValueChanged()}
+                randomImages={this.state.showRandomImages}
+                randomChange={() => this.randomCheckboxChanged()}
+            />
         </div>
         );
     }
-    }
 
-    export default App;
+}
+export default App;
