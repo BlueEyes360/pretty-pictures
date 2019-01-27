@@ -233,9 +233,6 @@ class App extends Component {
                         changed={this.props.changed}
                         data={this.state.images}
                     />
-                    {/* <FindDimensions
-                        data={this.state.images}
-                    /> */}
                     {/* <ProcessImages data={this.state.newImages} /> */}
                 </>
         }
