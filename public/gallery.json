@@ -1,0 +1,1229 @@
+{
+  "schemaVersion": 1,
+  "refreshedAt": "2026-11-08T05:36:49.170Z",
+  "source": {
+    "provider": "Harvard Art Museums",
+    "method": "api"
+  },
+  "records": [
+    {
+      "objectid": 1429,
+      "title": "What a Glorious Land!",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79762_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2005",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase in honor of Professor Chu-tsing Li through the generosity of an anonymous donor and of the Ralph C. Marcove International Understanding Through Arts and Crafts Foundation",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/1429"
+    },
+    {
+      "objectid": 4586,
+      "title": "Streams and Mountains, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000086_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2005",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/4586"
+    },
+    {
+      "objectid": 4615,
+      "title": "The Great Wall Snaking through the Mountains, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000085_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2005",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/4615"
+    },
+    {
+      "objectid": 4640,
+      "title": "Fantastic Mountains in Western China, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000087_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2005",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/4640"
+    },
+    {
+      "objectid": 4927,
+      "title": "Landscape with Full Moon",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV005781_dynmc",
+      "people": [
+        {
+          "displayname": "Kano Naonobu",
+          "role": "Artist"
+        }
+      ],
+      "dated": "Edo period, 17th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Laurance and Isabel Roberts",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/4927"
+    },
+    {
+      "objectid": 4988,
+      "title": "Still Life with Watermelon",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC100622_dynmc",
+      "people": [
+        {
+          "displayname": "Sarah Miriam Peale",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1822",
+      "creditline": "Harvard Art Museums/Fogg Museum, Daniel A. Pollack, Class of 1960, American Art Acquisition Fund",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/4988"
+    },
+    {
+      "objectid": 5109,
+      "title": "Landscape",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79035_dynmc",
+      "people": [
+        {
+          "displayname": "Kim Yu-sŏng (also known as Sŏ-am)",
+          "role": "Artist"
+        }
+      ],
+      "dated": "dated 1764",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Ernest B. and Helen Pratt Dane Fund for Asian Art",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/5109"
+    },
+    {
+      "objectid": 5144,
+      "title": "Melting-Glacier Water Cascading through a Thousand Peaks, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000103_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5144"
+    },
+    {
+      "objectid": 5145,
+      "title": "A Thousand Peaks and Myriad Ravines, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000107_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5145"
+    },
+    {
+      "objectid": 5189,
+      "title": "Sacrifice",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000118_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1990-91 and 2005-06",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5189"
+    },
+    {
+      "objectid": 5204,
+      "title": "Dwelling in the Mountains, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000100_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5204"
+    },
+    {
+      "objectid": 5205,
+      "title": "A Thousand Trees on Rolling Hills, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000098_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1990",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5205"
+    },
+    {
+      "objectid": 5211,
+      "title": "Le Marché aux Bestiaux, Dieppe",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:77600_dynmc",
+      "people": [
+        {
+          "displayname": "Walter Sickert",
+          "role": "Artist"
+        }
+      ],
+      "dated": "c. 1886",
+      "creditline": "Harvard Art Museums/Fogg Museum, Gift of Patricia Cornwell",
+      "copyright": "© Estate of Walter Richard Sickert / Artists Rights Society (ARS), New York",
+      "url": "https://harvardartmuseums.org/collections/object/5211"
+    },
+    {
+      "objectid": 5215,
+      "title": "Forested Peaks, Distant Waterfall, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000092_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5215"
+    },
+    {
+      "objectid": 5216,
+      "title": "Mists along a Mountain River, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000101_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5216"
+    },
+    {
+      "objectid": 5217,
+      "title": "Secluded Mountain Temple, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000102_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5217"
+    },
+    {
+      "objectid": 5218,
+      "title": "Sunrise on Towering Peaks, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000106_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5218"
+    },
+    {
+      "objectid": 5219,
+      "title": "Pines on Slender Peaks, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000099_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5219"
+    },
+    {
+      "objectid": 5220,
+      "title": "Bend in the Mountain River Near the Bingling-Si Cave Temples, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000097_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5220"
+    },
+    {
+      "objectid": 5221,
+      "title": "Mountains and Pines in Moonlight, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000096_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1990",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5221"
+    },
+    {
+      "objectid": 5222,
+      "title": "Mountain Bluff, Cascading Waterfall, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000095_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1990",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5222"
+    },
+    {
+      "objectid": 5240,
+      "title": "View of Wimmis, Valley of the Simmental, Switzerland",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:78757_dynmc",
+      "people": [
+        {
+          "displayname": "Frederic Edwin Church",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1868",
+      "creditline": "Harvard Art Museums/Fogg Museum, Gift of Theodore E. Stebbins Jr.",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/5240"
+    },
+    {
+      "objectid": 5244,
+      "title": "Sixteen Arhats (Rakan) in a Fantastic Landscape",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:78905_dynmc",
+      "people": [],
+      "dated": "Late Edo period, late 18th c. to 19th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, From the Grilli Collection, Gift of Peter Grilli and Diana Grilli",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/5244"
+    },
+    {
+      "objectid": 5265,
+      "title": "Saints Prosdocimus, Justina, Daniel, and Anthony of Padua in Glory with a View of the Prato della Valle, Padua",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:764669",
+      "people": [
+        {
+          "displayname": "Pietro Damini",
+          "role": "Artist"
+        },
+        {
+          "displayname": "Previously attributed to Paris Bordone",
+          "role": "Previous attribution"
+        }
+      ],
+      "dated": "c. 1617-1619",
+      "creditline": "Harvard Art Museums/Fogg Museum, Gift of Darcy Bradbury '78, Jonathan Kagan '78, and Eric Seiler '78",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/5265"
+    },
+    {
+      "objectid": 5368,
+      "title": "Viewing the Falls from a Mountain Pavilion, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000089_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1991",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5368"
+    },
+    {
+      "objectid": 5369,
+      "title": "A Thousand Peaks, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000090_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5369"
+    },
+    {
+      "objectid": 5499,
+      "title": "Layered Peaks and Towering Pines Overlook Distant Paddy Fields, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000093_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5499"
+    },
+    {
+      "objectid": 5500,
+      "title": "Mountain Dwelling, Majestic View, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000104_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5500"
+    },
+    {
+      "objectid": 5501,
+      "title": "Myriad Peaks, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000105_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5501"
+    },
+    {
+      "objectid": 5502,
+      "title": "Viewing the Mountain Gorge from a Balustraded Terrace, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000094_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1991",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5502"
+    },
+    {
+      "objectid": 5524,
+      "title": "Mountains Towering over Rural Village and Paddy fields, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000088_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5524"
+    },
+    {
+      "objectid": 5525,
+      "title": "Layered Peaks, Enveloping Mists, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000091_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2006",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5525"
+    },
+    {
+      "objectid": 5649,
+      "title": "Orchids and Rocks",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:78717_dynmc",
+      "people": [
+        {
+          "displayname": "Yi Ha-ŭng (also known as Taewŏn’gun)",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1896 - 1898",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase in honor of John M. Rosenfield through the generosity of Mariot Fraser Solomon",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/5649"
+    },
+    {
+      "objectid": 5673,
+      "title": "Rain-Swept Peaks, from the series \"Sacrifice\"",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000084_dynmc",
+      "people": [
+        {
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "role": "Artist"
+        }
+      ],
+      "dated": "2005",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase through the generosity of The Rubin-Ladd Foundation under the bequest of Ester R. Portnow",
+      "copyright": "© 1989 Lee Chun-yi",
+      "url": "https://harvardartmuseums.org/collections/object/5673"
+    },
+    {
+      "objectid": 5855,
+      "title": "Orchids and Rocks",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:78721_dynmc",
+      "people": [
+        {
+          "displayname": "Yi Ha-ŭng (also known as Taewŏn’gun)",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1896 - 1898",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase in honor of John M. Rosenfield through the generosity of Mariot Fraser Solomon",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/5855"
+    },
+    {
+      "objectid": 5858,
+      "title": "Mountainous Landscape with a Scholar Riding a Donkey and Approaching a Village Nestled in a Grove of Trees",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC101460_dynmc",
+      "people": [
+        {
+          "displayname": "Chŏng Sul-wŏn (also known as Tu-san)",
+          "role": "Artist"
+        }
+      ],
+      "dated": "early-mid 20th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Byung S. and Keum-ja Kang, Kang Collection, New York",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/5858"
+    },
+    {
+      "objectid": 6009,
+      "title": "The Invalid",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC100529_dynmc",
+      "people": [
+        {
+          "displayname": "Edward Lamson Henry",
+          "role": "Artist"
+        }
+      ],
+      "dated": "c. 1868-1870",
+      "creditline": "Harvard Art Museums/Fogg Museum, Daniel A. Pollack, Class of 1960, American Art Acquisition Fund",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/6009"
+    },
+    {
+      "objectid": 6259,
+      "title": "Orchids and Rocks",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:78719_dynmc",
+      "people": [
+        {
+          "displayname": "Yi Ha-ŭng (also known as Taewŏn’gun)",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1896 - 1898",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase in honor of John M. Rosenfield through the generosity of Mariot Fraser Solomon",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/6259"
+    },
+    {
+      "objectid": 6260,
+      "title": "Orchids and Rocks",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79037_dynmc",
+      "people": [
+        {
+          "displayname": "Yi Ha-ŭng (also known as Taewŏn’gun)",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1896 - 1898",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase in honor of John M. Rosenfield through the generosity of Mariot Fraser Solomon",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/6260"
+    },
+    {
+      "objectid": 6532,
+      "title": "Saint Andrew and Scenes from his Life",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV126975_dynmc",
+      "people": [],
+      "dated": "Date unknown",
+      "creditline": "Harvard Art Museums/Fogg Museum, Gift of Edward W. Forbes",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/6532"
+    },
+    {
+      "objectid": 7556,
+      "title": "Dog in Motion",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC100585_dynmc",
+      "people": [
+        {
+          "displayname": "Joseph Stella",
+          "role": "Artist"
+        }
+      ],
+      "dated": "c. 1914",
+      "creditline": "Harvard Art Museums/Fogg Museum, Gift of Dr. Ernest G. Stillman, Class of 1907, by exchange",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/7556"
+    },
+    {
+      "objectid": 8000,
+      "title": "Between what I say and what I keep silent",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV128040_dynmc",
+      "people": [
+        {
+          "displayname": "Elsbeth Deser",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1999",
+      "creditline": "Harvard Art Museums/Fogg Museum, The Jorie Marshall Waterman '96 and Gwendolyn Dunaway Waterman '92 Fund",
+      "copyright": "© Abigail Deser",
+      "url": "https://harvardartmuseums.org/collections/object/8000"
+    },
+    {
+      "objectid": 12550,
+      "title": "The Honorable Laura Lister",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:78760_dynmc",
+      "people": [
+        {
+          "displayname": "John Singer Sargent",
+          "role": "Artist"
+        }
+      ],
+      "dated": "1896",
+      "creditline": "Harvard Art Museums/Fogg Museum, Bequest of Grenville L. Winthrop",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/12550"
+    },
+    {
+      "objectid": 18406,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021306_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18406"
+    },
+    {
+      "objectid": 18407,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021308_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18407"
+    },
+    {
+      "objectid": 18408,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021313_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18408"
+    },
+    {
+      "objectid": 18409,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021256_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18409"
+    },
+    {
+      "objectid": 18429,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021305_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18429"
+    },
+    {
+      "objectid": 18430,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021307_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18430"
+    },
+    {
+      "objectid": 18431,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021311_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18431"
+    },
+    {
+      "objectid": 18432,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021314_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18432"
+    },
+    {
+      "objectid": 18496,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021309_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18496"
+    },
+    {
+      "objectid": 18497,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021310_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18497"
+    },
+    {
+      "objectid": 18498,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021312_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18498"
+    },
+    {
+      "objectid": 18550,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021303_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18550"
+    },
+    {
+      "objectid": 18551,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021304_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18551"
+    },
+    {
+      "objectid": 18578,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021268_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18578"
+    },
+    {
+      "objectid": 18579,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021273_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18579"
+    },
+    {
+      "objectid": 18580,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021274_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18580"
+    },
+    {
+      "objectid": 18581,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021275_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18581"
+    },
+    {
+      "objectid": 18582,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021276_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18582"
+    },
+    {
+      "objectid": 18583,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021285_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18583"
+    },
+    {
+      "objectid": 18584,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021286_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18584"
+    },
+    {
+      "objectid": 18585,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021293_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18585"
+    },
+    {
+      "objectid": 18586,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021294_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18586"
+    },
+    {
+      "objectid": 18587,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021295_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18587"
+    },
+    {
+      "objectid": 18588,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021270_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18588"
+    },
+    {
+      "objectid": 18589,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021277_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18589"
+    },
+    {
+      "objectid": 18590,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021279_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18590"
+    },
+    {
+      "objectid": 18591,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021282_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18591"
+    },
+    {
+      "objectid": 18592,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021288_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18592"
+    },
+    {
+      "objectid": 18593,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021290_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18593"
+    },
+    {
+      "objectid": 18594,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021292_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18594"
+    },
+    {
+      "objectid": 18595,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021297_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18595"
+    },
+    {
+      "objectid": 18602,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021284_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18602"
+    },
+    {
+      "objectid": 18615,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021296_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18615"
+    },
+    {
+      "objectid": 18623,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021301_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18623"
+    },
+    {
+      "objectid": 18631,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021291_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18631"
+    },
+    {
+      "objectid": 18632,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021298_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18632"
+    },
+    {
+      "objectid": 18638,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021299_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18638"
+    },
+    {
+      "objectid": 18639,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021302_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18639"
+    },
+    {
+      "objectid": 18647,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021300_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/18647"
+    },
+    {
+      "objectid": 19028,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021252_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19028"
+    },
+    {
+      "objectid": 19029,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021253_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19029"
+    },
+    {
+      "objectid": 19057,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021247_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19057"
+    },
+    {
+      "objectid": 19058,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021251_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19058"
+    },
+    {
+      "objectid": 19059,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021254_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19059"
+    },
+    {
+      "objectid": 19060,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021265_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19060"
+    },
+    {
+      "objectid": 19061,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021266_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19061"
+    },
+    {
+      "objectid": 19062,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021283_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19062"
+    },
+    {
+      "objectid": 19071,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021255_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19071"
+    },
+    {
+      "objectid": 19072,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021267_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19072"
+    },
+    {
+      "objectid": 19073,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021269_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19073"
+    },
+    {
+      "objectid": 19074,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021278_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19074"
+    },
+    {
+      "objectid": 19075,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021280_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19075"
+    },
+    {
+      "objectid": 19076,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021281_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19076"
+    },
+    {
+      "objectid": 19077,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021287_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19077"
+    },
+    {
+      "objectid": 19078,
+      "title": "Album of Iconographic Drawings of the Esoteric Buddhist Pantheon (Shingon sect)",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV021289_dynmc",
+      "people": [],
+      "dated": "18th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Robert Treat Paine",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19078"
+    },
+    {
+      "objectid": 19217,
+      "title": "Branch of an Old Blossoming Plum Tree",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:78916_dynmc",
+      "people": [
+        {
+          "displayname": "Yi Kong-wu",
+          "role": "Artist"
+        }
+      ],
+      "dated": "mid-second half 19th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Ernest B. and Helen Pratt Dane Fund for Asian Art",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19217"
+    },
+    {
+      "objectid": 19278,
+      "title": "Orchid and Rock",
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:78866_dynmc",
+      "people": [
+        {
+          "displayname": "Kim Ŭng-wŏn (also spelled Gim Eung'won; also known as So-ho and Ch'ŏn-ram)",
+          "role": "Artist"
+        }
+      ],
+      "dated": "late 19th-early 20th century",
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift of Robert D. Mowry in honor of Byung S. and Keum Ja Kang",
+      "copyright": "",
+      "url": "https://harvardartmuseums.org/collections/object/19278"
+    }
+  ]
+}

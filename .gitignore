@@ -7,12 +7,29 @@
 
 # testing
 /coverage
+/output
+/test-results
+/test-results-pages
+/playwright-report
+/playwright-pages-report
+/.firebase
+/imports
+/public/gallery.json.bak
+/public/gallery.json.lock
+/public/gallery.json.*.tmp
+/public/gallery.json.bak.*.tmp
 
 # production
 /build
+/build-pages
+/public/discovery.json.lock
+/public/discovery.json.*.tmp
 
 # misc
 .DS_Store
+.env
+.env.*
+!.env.example
 .env.local
 .env.development.local
 .env.test.local
